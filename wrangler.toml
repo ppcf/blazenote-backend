@@ -9,6 +9,12 @@ compatibility_flags = [ "nodejs_compat" ]
 # database_id = "<DATABASE ID>"
 # migrations_dir = "./migrations"
 
+[[d1_databases]]
+binding = "DB"
+database_name = "blazenote"
+database_id = "bce1459e-9d84-4f1d-8daa-956ebec1e264"
+migrations_dir = "./migrations"
+
 # [ai]
 # binding = "AI"
 
@@ -16,6 +22,10 @@ compatibility_flags = [ "nodejs_compat" ]
 # binding = "R2_BUCKET"
 # bucket_name = "blazenote"
 # preview_bucket_name = "dev-blazenote"
+
+[[routes]]
+pattern = "blazenote-backend.tactful-helix.sxplab.com"
+custom_domain = true
 
 [observability.logs]
 enabled = true
